@@ -1,0 +1,8 @@
+// Place user-specific overrides in this file, to ensure they're preserved
+// when upgrading
+{
+	"theme": "Soda Dark.sublime-theme",
+	"folder_exclude_patterns": ["__pycache__",".sass-cache"],
+	"file_exclude_patterns": ["*.pyc",".DS_Store"],
+	"open_files_in_new_window":true
+}
