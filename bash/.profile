@@ -3,8 +3,6 @@ export TERM=xterm-color
 export PYTHONPATH=$PYTHONPATH:$HOME/Projects/APP_crazyhorse:$HOME/Projects/APP_constellation/iris:$HOME/Projects/APP_constellation/orion
 export WORKON_HOME=$HOME/.virtualenv
 export JAVA_HOME=/usr
-#export NEO4J_PYTHON_CLASSPATH=/Users/aventurella/Downloads/neo4j-community-1.6/lib
-#export DEBUG=true
 PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/Users/aventurella/github/virtualenv:$PATH
 
 #virtualenv and mkvirtualenv
