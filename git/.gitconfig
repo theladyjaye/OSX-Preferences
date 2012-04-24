@@ -2,6 +2,9 @@
     name = Adam Venturella
     #email = machine@email.com
 
+#[core]
+    #excludesfile = "Path to global ignore"
+
 [color]
     ui = true
 
