@@ -11,6 +11,15 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
 fi
 
+# ssh-agent
+# ensure the agent plist is running as well
+# see http://tim.vanwerkhoven.org/post/2011/11/17/OSX-launchd-and-launchctl-issues
+# for more info : launchctl list org.openbsd.ssh-agent
+SSH_AGENT_KEYS=`ssh-add -l`
+if [ "$SSH_AGENT_KEYS" = "The agent has no identities." ]; then
+    `ssh-add &>/dev/null`
+fi
+
 # python
 export PYTHONPATH=$PYTHONPATH:$HOME/Projects/APP_crazyhorse:$HOME/Projects/APP_constellation/iris:$HOME/Projects/APP_constellation/orion
 export PYTHONSTARTUP=$HOME/pycon/advpython2/pystartup.py
