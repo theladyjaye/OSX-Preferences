@@ -21,8 +21,10 @@ if [ "$SSH_AGENT_KEYS" = "The agent has no identities." ]; then
 fi
 
 # python
+# http://docs.python.org/using/cmdline.html#environment-variables
 export PYTHONPATH=$PYTHONPATH:$HOME/Projects/APP_crazyhorse:$HOME/Projects/APP_constellation/iris:$HOME/Projects/APP_constellation/orion
 export PYTHONSTARTUP=$HOME/pycon/advpython2/pystartup.py
+export PYTHONDONTWRITEBYTECODE=1
 
 #virtualenv and mkvirtualenv
 export WORKON_HOME=$HOME/.virtualenv
