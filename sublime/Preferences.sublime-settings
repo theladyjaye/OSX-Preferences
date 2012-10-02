@@ -1,31 +1,44 @@
 {
     "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+    "detect_indentation": false,
     "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
     "file_exclude_patterns":
     [
         "*.pyc",
         ".DS_Store"
     ],
+    "find_selected_text": true,
+    "fold_buttons": false,
     "folder_exclude_patterns":
     [
         "__pycache__",
         ".sass-cache",
         ".git"
     ],
-    "font_face": "Inconsolata",
+    "font_face": "Ubuntu Mono",
+    "font_options":
+    [
+        "subpixel_antialias"
+    ],
     "font_size": 14.0,
-    "open_files_in_new_window": true,
-    "theme": "Soda Dark.sublime-theme",
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": false,
-    "translate_tabs_to_spaces":true,
-    "use_tab_stops":true,
-    "detect_indentation":false,
-    "ensure_newline_at_eof_on_save":true,
-    "translate_tabs_to_spaces":true,
-    "rulers": [80],
     "highlight_line": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "open_files_in_new_window": true,
+    "rulers":
+    [
+        72,
+        79
+    ],
+    "scroll_past_end": true,
     "show_full_path": true,
-    "scroll_past_end": true
+    "theme": "Soda Dark.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "use_tab_stops": true,
+    "word_wrap": false
 }
 

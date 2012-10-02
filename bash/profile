@@ -23,16 +23,16 @@ fi
 # python
 # http://docs.python.org/using/cmdline.html#environment-variables
 export PYTHONPATH=$PYTHONPATH:$HOME/Projects/APP_crazyhorse:$HOME/Projects/APP_constellation/iris:$HOME/Projects/APP_constellation/orion
-export PYTHONSTARTUP=$HOME/pycon/advpython2/pystartup.py
-export PYTHONDONTWRITEBYTECODE=1
+#export PYTHONSTARTUP=$HOME/pycon/advpython2/pystartup.py
+#export PYTHONDONTWRITEBYTECODE=1
 
 #virtualenv and mkvirtualenv
 export WORKON_HOME=$HOME/.virtualenv
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_REQUIRE_VIRTUALENV=true
-export PIP_RESPECT_VIRTUALENV=true
-source $WORKON_HOME/default/bin/activate
-source $HOME/.virtualenv/default/bin/virtualenvwrapper.sh
+#export PIP_VIRTUALENV_BASE=$WORKON_HOME
+#export PIP_REQUIRE_VIRTUALENV=true
+#export PIP_RESPECT_VIRTUALENV=true
+#source $WORKON_HOME/default/bin/activate
+source /usr/local/share/python/virtualenvwrapper.sh
 
 #export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
 
