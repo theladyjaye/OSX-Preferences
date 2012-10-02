@@ -1,6 +1,3 @@
-" Line Numbers
-set nu
-
 " Syntax on
 syntax on
 
