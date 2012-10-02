@@ -1,5 +1,6 @@
 [user]
-    name = Adam Venturella
+	name = Adam Venturella
+	email = aventurella@mediatemple.net
     #email = machine@email.com
 
 #[core]
