@@ -1,0 +1,13 @@
+# python
+# http://docs.python.org/using/cmdline.html#environment-variables
+#export PYTHONSTARTUP=$HOME/pycon/advpython2/pystartup.py
+#export PYTHONDONTWRITEBYTECODE=1
+
+#virtualenv and mkvirtualenv
+export WORKON_HOME=$HOME/.virtualenv
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
+#source /usr/local/share/python/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
+#source $WORKON_HOME/default/bin/activate

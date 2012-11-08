@@ -1,0 +1,7 @@
+export CLICOLOR=1
+export TERM=xterm-color
+export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi

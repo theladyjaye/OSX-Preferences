@@ -1,6 +1,6 @@
 [user]
-	name = Adam Venturella
-	email = aventurella@mediatemple.net
+    name = Adam Venturella
+    email = aventurella@blitzagency.com
     #email = machine@email.com
 
 #[core]
@@ -16,14 +16,14 @@
 
 [alias]
     # add
-    a = add 
+    a = add
 
     # branch
     b = branch -v
 
     # commit
     c = commit -m
-    ca = commit -am 
+    ca = commit -am
 
     # checkout
     co = checkout
@@ -36,14 +36,14 @@
     changelog = log --pretty=format:\" * %s\"
 
     # tag
-    t = tag -n  
+    t = tag -n
 
 [format]
       pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 
 [merge]
     summary = true
-    verbosity = 1 
+    verbosity = 1
 
 [push]
     # 'git push' will push the current brancg to it's tracking branch

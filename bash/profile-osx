@@ -1,13 +1,8 @@
-. "env.sh"
 export CLICOLOR=1
 export TERM=xterm-color
-export JAVA_HOME=/usr
-#export NEO4J_PYTHON_CLASSPATH=/Users/aventurella/Downloads/neo4j-community-1.6/lib
-#export DEBUG=true
-PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
-
 export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
 
+# must brew install git and bash-completion to get __git_ps1
 if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
 fi
@@ -34,8 +29,3 @@ export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 source /usr/local/share/python/virtualenvwrapper.sh
 source $WORKON_HOME/default/bin/activate
-
-
-
-#export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
-
