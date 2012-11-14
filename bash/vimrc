@@ -2,7 +2,7 @@
 syntax on
 
 " Highlight Search
-set hls 
+set hls
 
 filetype plugin indent on
 

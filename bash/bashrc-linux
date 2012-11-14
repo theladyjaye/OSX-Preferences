@@ -1,4 +1,5 @@
 force_color_prompt=yes
+alias ls='ls --color=auto'
 
 if [ -f "$HOME/.pythonrc" ]; then
     . "$HOME/.pythonrc"
@@ -6,4 +7,8 @@ fi
 
 if [ -f "$HOME/.miscrc" ]; then
     . "$HOME/.miscrc"
+fi
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
 fi
