@@ -2,6 +2,36 @@ export CLICOLOR=1
 export TERM=xterm-color
 export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
 
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+system_name=`uname`
+
+if [ $system_name == "Darwin" ]; then
+    
+    #brew
+    PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+    # must brew install git and bash-completion to get __git_ps1
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+            . `brew --prefix`/etc/bash_completion
+    fi
+
+    # ssh-agent
+    # ensure the agent plist is running as well
+    # see http://tim.vanwerkhoven.org/post/2011/11/17/OSX-launchd-and-launchctl-issues
+    # for more info : launchctl list org.openbsd.ssh-agent
+    SSH_AGENT_KEYS=`ssh-add -l`
+    if [ "$SSH_AGENT_KEYS" = "The agent has no identities." ]; then
+        `ssh-add &>/dev/null`
+    fi
+
+else
+    force_color_prompt=yes
+    alias ls='ls --color=auto'
+
+    if [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
+fi
+
+if [ -d "$HOME/bin" ]; then
+    PATH="$HOME/bin:$PATH"
 fi
