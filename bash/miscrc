@@ -1,6 +1,5 @@
 export CLICOLOR=1
 export TERM=xterm-color
-export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
 
 system_name=`uname`
 
@@ -35,3 +34,5 @@ fi
 if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
+
+export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '

@@ -9,14 +9,16 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 
-# OSX, Linux
+if [ -d "$WORKON_HOME/default" ]; then
+    source $WORKON_HOME/default/bin/activate
+fi
+
 if [ -f "/usr/local/share/python/virtualenvwrapper.sh" ]; then
     . "/usr/local/share/python/virtualenvwrapper.sh"
+
+elif [ -f "$HOME/.virtualenv/default/bin/virtualenvwrapper.sh" ]; then
+    . "$HOME/.virtualenv/default/bin/virtualenvwrapper.sh"
+
 elif [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
     . "/usr/local/bin/virtualenvwrapper.sh"
 fi
-
-#source /usr/local/share/python/virtualenvwrapper.sh
-#source /usr/local/bin/virtualenvwrapper.sh
-
-#source $WORKON_HOME/default/bin/activate

@@ -1,7 +1,8 @@
+if [ -f "$HOME/.miscrc" ]; then
+    . "$HOME/.miscrc"
+fi
+
 if [ -f "$HOME/.pythonrc" ]; then
     . "$HOME/.pythonrc"
 fi
 
-if [ -f "$HOME/.miscrc" ]; then
-    . "$HOME/.miscrc"
-fi
