@@ -7,6 +7,10 @@ if [ $system_name == "Darwin" ]; then
     
     #brew
     PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    
+    if [ `which ruby` ==  '/usr/local/bin/ruby' ]; then
+        PATH=/usr/local/Cellar/ruby/1.9.3-p327/bin:$PATH
+    fi
 
     # must brew install git and bash-completion to get __git_ps1
     if [ -f `brew --prefix`/etc/bash_completion ]; then

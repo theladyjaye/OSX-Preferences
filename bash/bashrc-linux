@@ -6,3 +6,6 @@ if [ -f "$HOME/.pythonrc" ]; then
     . "$HOME/.pythonrc"
 fi
 
+if [ -f "$HOME/.amazonrc" ]; then
+    . "$HOME/.amazonrc"
+fi
