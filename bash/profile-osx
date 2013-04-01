@@ -1,6 +1,6 @@
 export CLICOLOR=1
 export TERM=xterm-color
-export PS1='[\[\033[0;35m\]$(hostname) \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
+export PS1='[\[\033[0;35m\]\u@\h \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
 
 # must brew install git and bash-completion to get __git_ps1
 if [ -f `brew --prefix`/etc/bash_completion ]; then

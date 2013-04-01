@@ -9,6 +9,10 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 
+#export IPYTHON_HOME=$HOME/github/ipython
+#export TORNADO_HOME=$HOME/github/tornado
+#export IPYTHON_NOTEBOOK=1
+
 if [ -d "$WORKON_HOME/default" ]; then
     source $WORKON_HOME/default/bin/activate
 fi
