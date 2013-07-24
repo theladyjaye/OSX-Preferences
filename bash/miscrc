@@ -1,16 +1,15 @@
 export CLICOLOR=1
-export TERM=xterm-color
 
 system_name=`uname`
 
 
 if [ $system_name == "Darwin" ]; then
-    
+
     alias gh="echo $(git config remote.origin.url) | sed 's#.*:#http://github.com/#g' | xargs open"
 
     #brew
     PATH=/usr/local/bin:/usr/local/sbin:$PATH
-    
+
     if [ `which ruby` ==  '/usr/local/bin/ruby' ]; then
         PATH=/usr/local/Cellar/ruby/1.9.3-p327/bin:$PATH
     fi
@@ -46,4 +45,9 @@ if [ -d '/usr/local/share/npm/bin' ]; then
     PATH=/usr/local/share/npm/bin:$PATH
 fi
 
-export PS1='[\[\033[0;35m\]\u@\h \[\033[0;37m\]\w\[\033[0m\]$(__git_ps1 " (\[\033[0;33m\]%s\[\033[0m\])")]\n$(date +%H:%M) \$ '
+purple='\[\e[0;35m\]'
+yellow='\[\e[0;33m\]'
+Bwhite='\[\e[0;37m\]'
+reset='\[\e[0m\]'
+
+export  PS1="\[[${purple}\u@\h ${Bwhite}\w${reset}\$(__git_ps1 \" (${yellow}%s${reset})\")]\n\$(date +%H:%M) \$ "
