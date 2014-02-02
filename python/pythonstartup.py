@@ -1,5 +1,5 @@
-# https://github.com/mitsuhiko/dotfiles/blob/master/python/pythonstartup.py
 def _init():
+    # https://github.com/mitsuhiko/dotfiles/blob/master/python/pythonstartup.py
     import atexit
     import os
     import sys
