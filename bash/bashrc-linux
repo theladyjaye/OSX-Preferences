@@ -10,4 +10,8 @@ if [ -f "$HOME/.amazonrc" ]; then
     . "$HOME/.amazonrc"
 fi
 
-PATH=$PATH:/usr/local/share/npm/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -f "$HOME/.gorc" ]; then
+    . "$HOME/.gorc"
+fi
+
+ATH=$PATH:/usr/local/share/npm/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
