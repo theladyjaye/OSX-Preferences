@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+var _ = require('vendor/underscore/lodash');
+var View = require('vendor/blitz/view');
+
+var ${1:MyView} =  View.extend({
+    initialize : function(){
+
+    }
+});
+
+module.exports = ${1:MyView};
+
+]]></content>
+    <tabTrigger>famousView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

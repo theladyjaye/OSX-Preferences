@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+
+var marionette = require('marionette');
+
+var {$1:AppRouter} =  marionette.AppRouter.extend({
+    appRoutes:{
+        '*filter':'setFilter'
+    }
+});
+
+exports.{$1:AppRouter}  = {$1:AppRouter};
+
+});
+]]></content>
+    <tabTrigger>router</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

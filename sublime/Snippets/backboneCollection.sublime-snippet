@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define(function( require, exports, module ){
+
+var backbone = require('backbone');
+var ${1:Model} = require('./models').${1:Model};
+
+var ${2:Collection} =  backbone.Collection.extend({
+    ${3://}urlRoot: '${4:/api/v1/auction_item/}',
+    model: ${1:Model}
+});
+
+exports.${2:Collection} = ${2:Collection};
+
+});
+]]></content>
+    <tabTrigger>collection</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

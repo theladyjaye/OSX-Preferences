@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+
+var marionette = require('marionette');
+var ${2:ItemView} = require('./${2:ItemView}').${2:ItemView};
+var template = require('hbs!../templates/${1:template}');
+
+var ${3:CompositeView} =  marionette.CompositeView.extend({
+    template : template,
+    itemView : ${2:ItemView},
+    itemViewContainer : '#${3:item-container}',
+    initialize : function(){
+
+    },
+    ui : {
+
+    },
+    events : {
+
+    }
+});
+
+exports.${3:CompositeView} = ${3:CompositeView};
+
+});
+]]></content>
+    <tabTrigger>compositeView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

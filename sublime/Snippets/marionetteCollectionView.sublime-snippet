@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+
+var marionette = require('marionette');
+var ${2:ItemView} = require('./${2:ItemView}').${2:ItemView};
+
+var ${3:CollectionView} =  marionette.CollectionView.extend({
+    itemView : ${2:ItemView},
+    itemViewContainer : '#${4:item-container}',
+    initialize : function(){
+
+    },
+    ui : {
+
+    },
+    events : {
+
+    }
+});
+
+exports.${3:CollectionView} = ${3:CollectionView};
+
+});
+]]></content>
+    <tabTrigger>collectionView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

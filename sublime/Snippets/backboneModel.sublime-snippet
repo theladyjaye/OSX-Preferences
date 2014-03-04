@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define(function( require, exports, module ){
+
+var backbone = require('backbone');
+var ${1:Model} = backbone.Model.extend({
+    defaults: {
+
+    }
+});
+
+exports.${1:Model} = ${1:Model};
+
+});
+
+]]></content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

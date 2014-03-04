@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+    
+});
+]]></content>
+    <tabTrigger>require</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

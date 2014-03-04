@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+
+var marionette = require('marionette');
+var template = require('hbs!../templates/${1:template}');
+
+var ${2:ItemView} = marionette.ItemView.extend({
+    template : template,
+    ui : {
+
+    },
+    events : {
+
+    },
+    initialize : function(){
+        ${3:}
+    }
+});
+
+exports.${2:ItemView} = ${2:ItemView};
+
+});
+]]></content>
+    <tabTrigger>itemView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
