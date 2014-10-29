@@ -7,23 +7,25 @@ export PYTHONSTARTUP=~/.pythonstartup.py
 #virtualenv and mkvirtualenv
 export WORKON_HOME=$HOME/.virtualenv
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_REQUIRE_VIRTUALENV=true
-export PIP_RESPECT_VIRTUALENV=true
+#export PIP_REQUIRE_VIRTUALENV=true
+#export PIP_RESPECT_VIRTUALENV=true
 
 #export IPYTHON_HOME=$HOME/github/ipython
 #export TORNADO_HOME=$HOME/github/tornado
 #export IPYTHON_NOTEBOOK=1
 
-if [ -d "$WORKON_HOME/default" ]; then
-    source $WORKON_HOME/default/bin/activate
-fi
+export VIRTUALENVWRAPPER_LOG_DIR="$WORKON_HOME"
+export VIRTUALENVWRAPPER_HOOK_DIR="$WORKON_HOME"
+#VIRTUAL_ENV_DISABLE_PROMPT=true
 
 if [ -f "/usr/local/share/python/virtualenvwrapper.sh" ]; then
     . "/usr/local/share/python/virtualenvwrapper.sh"
 
-elif [ -f "$HOME/.virtualenv/default/bin/virtualenvwrapper.sh" ]; then
-    . "$HOME/.virtualenv/default/bin/virtualenvwrapper.sh"
-
 elif [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
     . "/usr/local/bin/virtualenvwrapper.sh"
 fi
+
+
+#if [ -d "$WORKON_HOME/default" ]; then
+#    source $WORKON_HOME/default/bin/activate
+#fi

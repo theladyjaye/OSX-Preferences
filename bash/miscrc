@@ -1,5 +1,10 @@
+export JSDOC_TOOLKIT=/usr/local/opt/jsdoc-toolkit/libexec/jsdoc-toolkit
+export JSDOC_TOOLKIT_RST_TEMPLATE='/Users/aventurella/code.google.com/jsdoc-toolkit-rst-template'
+export POWERLINE_COMMAND=~/bin/powerline
 export CLICOLOR=1
 export TERM=xterm-256color
+export VAGRANT_VMWARE_FUSION_APP="/Applications/VMware Fusion.app"
+
 system_name=`uname`
 
 
